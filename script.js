@@ -49,6 +49,17 @@ const config = {
   paket: [
     {
       nama: "Paket Foto Basic",
+      harga: "Rp 300.000",
+      fitur: [
+        "1 jam dokumentasi",
+        "1 fotografer profesional",
+        "50+ foto edit HD",
+        "Drive hasil",
+      ],
+      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Foto%20Basic",
+    },
+    {
+      nama: "Paket Foto Long Time",
       harga: "Rp 500.000",
       fitur: [
         "2 jam dokumentasi",
@@ -56,7 +67,7 @@ const config = {
         "50+ foto edit HD",
         "Drive hasil",
       ],
-      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Foto%20Basic",
+      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Foto%20Long%20Time",
     },
     {
       nama: "Paket Foto + Video",
