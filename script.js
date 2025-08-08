@@ -49,7 +49,7 @@ const config = {
   paket: [
     {
       nama: "Paket Foto Basic",
-      harga: "Rp 300.000",
+      harga: "Rp 350.000",
       fitur: [
         "1 jam dokumentasi",
         "1 fotografer profesional",
