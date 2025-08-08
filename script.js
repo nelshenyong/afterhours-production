@@ -40,7 +40,7 @@ const config = {
         "https://ik.imagekit.io/qttuwilgn/NYG05945.JPG?updatedAt=1754670200914",
       event: "IBG 'DEMOS' SMAN 22 Palembang",
       client: "IBG SMAN 22 Palembang",
-      date: "25 July 2025",
+      date: "25 Juli 2025",
       drive:
         "https://drive.google.com/drive/folders/15U19MNqBpEngFycwqn9dcS2ILPGTf9tp",
       ig: "https://www.instagram.com/p/DNGZVJuSdOi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
