@@ -1,190 +1,499 @@
-// Konfigurasi utama website Afterhours Production
-const config = {
-  about: `Afterhours Production adalah vendor jasa fotografi dan videografi profesional di Palembang. Kami berfokus pada dokumentasi berbagai acara seperti pernikahan, wisuda, ulang tahun, dan event penting lainnya di Palembang dan sekitarnya. Dengan tim berpengalaman dan peralatan modern, kami siap mengabadikan momen terbaik Anda di Palembang.`,
-  services: [
-    {
-      icon: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="7" width="20" height="15" rx="3" fill="#FFD625" stroke="#222" stroke-width="1.5"/><circle cx="12" cy="14.5" r="4" fill="#fff" stroke="#222" stroke-width="1.5"/><rect x="7" y="2" width="10" height="5" rx="2" fill="#FFD625" stroke="#222" stroke-width="1.5"/></svg>`,
-      title: "Fotografi Acara Palembang",
-      desc: "Jasa dokumentasi foto profesional untuk berbagai acara di Palembang: wedding, wisuda, ulang tahun, gathering, dan event lainnya.",
-    },
-    {
-      icon: `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="20" height="12" rx="3" fill="#FFD625" stroke="#222" stroke-width="1.5"/><polygon points="16,12 22,16 22,8" fill="#fff" stroke="#222" stroke-width="1.5"/></svg>`,
-      title: "Videografi Acara Palembang",
-      desc: "Jasa dokumentasi video profesional untuk berbagai acara di Palembang: cinematic wedding, highlight event, dan video kreatif lainnya.",
-    },
-  ],
-  portfolio: [
-    {
-      thumb:
-        "https://ik.imagekit.io/qttuwilgn/DSC00724.jpg?updatedAt=1751016052026",
-      event:
-        "Dokumentasi Acara Farewell SMP Tiara Nusantara & Palm KIds School",
-      client: "SMP Tiara Nusantara & Palm KIds School",
-      date: "16 Juni 2025",
-      drive:
-        "https://drive.google.com/drive/folders/15_cm39UijKaqCn24sfjjojYTPlAVBLAD",
-      ig: "https://www.instagram.com/reel/DLRaFCDxhC2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    },
-    {
-      thumb:
-        "https://ik.imagekit.io/qttuwilgn/DSC00921.jpg?updatedAt=1751015797131",
-      event: "Sweet Seventeen Birthday Party Vincent",
-      client: "Vincent",
-      date: "22 Juni 2025",
-      drive:
-        "https://drive.google.com/drive/folders/1CL6mR1gWPF8zDRVV4dKh6GXQaBD1CWUE",
-      ig: "https://www.instagram.com/p/DLX03aYSsZj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    },
-    {
-      thumb:
-        "https://ik.imagekit.io/qttuwilgn/NYG05945.JPG?updatedAt=1754670200914",
-      event: "IBG 'DEMOS' SMAN 22 Palembang",
-      client: "IBG SMAN 22 Palembang",
-      date: "25 Juli 2025",
-      drive:
-        "https://drive.google.com/drive/folders/15U19MNqBpEngFycwqn9dcS2ILPGTf9tp",
-      ig: "https://www.instagram.com/p/DNGZVJuSdOi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    },
-  ],
-  paket: [
-    {
-      nama: "Paket Foto Basic",
-      harga: "Rp 350.000",
-      fitur: [
-        "1 jam dokumentasi",
-        "1 fotografer profesional",
-        "50+ foto edit HD",
-        "Drive hasil",
-      ],
-      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Foto%20Basic",
-    },
-    {
-      nama: "Paket Foto Long Time",
-      harga: "Rp 500.000",
-      fitur: [
-        "2 jam dokumentasi",
-        "1 fotografer profesional",
-        "50+ foto edit HD",
-        "Drive hasil",
-      ],
-      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Foto%20Long%20Time",
-    },
-    {
-      nama: "Paket Foto + Video",
-      harga: "Rp 1.000.000",
-      fitur: [
-        "4 jam dokumentasi",
-        "2 fotografer & 1 videografer",
-        "100+ foto edit HD",
-        "Video highlight 2-3 menit",
-        "Drive hasil",
-      ],
-      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Foto%20%2B%20Video",
-    },
-    {
-      nama: "Paket Acara Full",
-      harga: "Rp 2.500.000",
-      fitur: [
-        "Full day dokumentasi",
-        "2 fotografer & 2 videografer",
-        "200+ foto edit HD",
-        "Video cinematic acara",
-        "Drive Hasil",
-      ],
-      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20pesan%20Paket%20Acara%20Full",
-    },
-    {
-      nama: "Paket Custom/Spesial",
-      harga: "Hubungi Kami",
-      fitur: [
-        "Paket sesuai kebutuhan acara Anda",
-        "Konsultasi gratis",
-        "Penawaran fleksibel",
-      ],
-      wa: "https://wa.me/6281273462705?text=Halo%20Afterhours%20Production%2C%20saya%20ingin%20konsultasi%20Paket%20Custom",
-      customCta: "Konsultasi Paket Custom",
-    },
-  ],
-  contact: {
-    whatsapp: "6281273462705",
-    instagram: "afterhours_production",
-  },
-};
+// Global variable untuk menyimpan data
+let websiteData = null;
 
-// Render About
-const aboutDesc = document.getElementById("about-desc");
-aboutDesc.textContent = config.about;
+// Load data dari data.json
+async function loadData() {
+  try {
+    const response = await fetch("data.json");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    websiteData = await response.json();
+    console.log("Data loaded successfully:", websiteData);
+  } catch (error) {
+    console.error("Gagal memuat data:", error);
+  }
+}
+
+// Initialize website setelah data loaded
+async function initWebsite() {
+  await loadData();
+
+  // Render content berdasarkan halaman
+  const currentPage = getCurrentPage();
+
+  switch (currentPage) {
+    case "index":
+      renderIndexPage();
+      break;
+    case "about":
+      renderAboutPage();
+      break;
+    case "services":
+      renderServicesPage();
+      break;
+    case "portfolio":
+      renderPortfolioPage();
+      break;
+    case "team":
+      renderTeamPage();
+      break;
+    case "contact":
+      renderContactPage();
+      break;
+  }
+
+  // Initialize common features
+  initAnimations();
+  initCounters();
+  initFAQ();
+  initContactForm();
+}
+
+// Get current page name
+function getCurrentPage() {
+  const path = window.location.pathname;
+  const page = path.split("/").pop().replace(".html", "");
+  return page || "index";
+}
+
+// Render Index Page
+function renderIndexPage() {
+  if (!websiteData) return;
+
+  // Render about section
+  const aboutDesc = document.getElementById("about-desc");
+  if (aboutDesc && websiteData.about) {
+    aboutDesc.textContent = websiteData.about.description;
+  }
+
+  // Render services
+  renderServices();
+
+  // Render packages
+  renderPackages();
+
+  // Render portfolio
+  renderPortfolio();
+
+  // Render contact info
+  renderContactInfo();
+}
+
+// Render About Page
+function renderAboutPage() {
+  if (!websiteData || !websiteData.about) return;
+
+  // Update hero content
+  const heroTitle = document.querySelector(".about-hero-title");
+  const heroSubtitle = document.querySelector(".about-hero-subtitle");
+  const heroDesc = document.querySelector(".about-hero-desc");
+
+  if (heroTitle) heroTitle.textContent = websiteData.about.title;
+  if (heroSubtitle) heroSubtitle.innerHTML = websiteData.about.subtitle;
+  if (heroDesc) heroDesc.textContent = websiteData.about.description;
+
+  // Render stats
+  renderStats();
+}
+
+// Render Services Page
+function renderServicesPage() {
+  if (!websiteData) return;
+
+  // Render services
+  renderServices();
+
+  // Render packages
+  renderPackages();
+}
+
+// Render Portfolio Page
+function renderPortfolioPage() {
+  if (!websiteData) return;
+
+  // Render portfolio
+  renderPortfolio();
+}
+
+// Render Team Page
+function renderTeamPage() {
+  if (!websiteData) return;
+
+  // Render team
+  renderTeam();
+}
+
+// Render Contact Page
+function renderContactPage() {
+  if (!websiteData) return;
+
+  // Render contact info
+  renderContactInfo();
+}
 
 // Render Services
-const servicesList = document.getElementById("services-list");
-servicesList.innerHTML = config.services
-  .map(
-    (s) => `
-  <div class="service-card">
-    <div class="service-icon" style="font-size:2.2rem;">${s.icon}</div>
-    <h3>${s.title}</h3>
-    <p>${s.desc}</p>
+function renderServices() {
+  if (!websiteData || !websiteData.services) return;
+
+  const servicesContainer = document.getElementById("services-list");
+  if (!servicesContainer) return;
+
+  servicesContainer.innerHTML = websiteData.services
+    .map(
+      (service) => `
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="service-card animate-on-scroll">
+        <div class="service-icon">${service.icon}</div>
+        <h3>${service.title}</h3>
+        <p>${service.desc}</p>
+      </div>
+    </div>
+  `
+    )
+    .join("");
+}
+
+// Render Packages
+function renderPackages() {
+  if (!websiteData || !websiteData.packages) return;
+
+  const packagesContainer = document.getElementById("packages-list");
+  if (!packagesContainer) return;
+
+  packagesContainer.innerHTML = websiteData.packages
+    .map(
+      (pkg) => `
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="package-card animate-on-scroll">
+        <div class="package-header">
+          <h3>${pkg.nama}</h3>
+          <div class="package-price">${pkg.harga}</div>
+        </div>
+        <div class="package-features">
+          <ul>
+            ${pkg.fitur.map((feature) => `<li>${feature}</li>`).join("")}
+          </ul>
+        </div>
+        <div class="package-footer">
+          <a href="${pkg.wa}" class="btn btn-primary" target="_blank">
+            ${pkg.customCta}
+          </a>
+        </div>
+      </div>
   </div>
 `
-  )
-  .join("");
+    )
+    .join("");
+}
 
 // Render Portfolio
-const portfolioList = document.getElementById("portfolio-list");
-portfolioList.innerHTML = config.portfolio
-  .map(
-    (p) => `
+function renderPortfolio() {
+  if (!websiteData || !websiteData.portfolio) return;
+
+  const portfolioContainer = document.getElementById("portfolio-list");
+  if (!portfolioContainer) return;
+
+  portfolioContainer.innerHTML = websiteData.portfolio
+    .map(
+      (item) => `
+    <div class="col-lg-4 col-md-6 col-12 mb-4 portfolio-item animate-on-scroll" data-category="${item.category}">
   <div class="portfolio-card">
-    <img src="${p.thumb}" alt="${p.event}" class="portfolio-thumb">
-    <div class="portfolio-meta">${p.event} <br> <b>${p.client}</b> <br> <span>${p.date}</span></div>
+        <div class="portfolio-image">
+          <img src="${item.thumb}" alt="${item.event}" class="img-fluid">
+          <div class="portfolio-overlay">
+            <div class="portfolio-actions">
+              <a href="${item.overlay.drive}" class="btn btn-primary" target="_blank">
+                <i class='bx bx-folder-open'></i> Drive
+              </a>
+              <a href="${item.overlay.instagram}" class="btn btn-outline" target="_blank">
+                <i class='bx bxl-instagram'></i> Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h4>${item.event}</h4>
+          <p class="portfolio-client">${item.client}</p>
+          <p class="portfolio-date">${item.date}</p>
     <div class="portfolio-links">
-      <a href="${p.drive}" target="_blank">Drive</a>
-      <a href="${p.ig}" target="_blank">Instagram</a>
+            <a href="${item.card.drive}" class="btn btn-sm btn-primary" target="_blank">
+              <i class='bx bx-folder-open'></i> Drive
+            </a>
+            <a href="${item.card.instagram}" class="btn btn-sm btn-outline" target="_blank">
+              <i class='bx bxl-instagram'></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+    )
+    .join("");
+
+  // Initialize portfolio filter
+  initPortfolioFilter();
+}
+
+// Render Team
+function renderTeam() {
+  if (!websiteData || !websiteData.team) return;
+
+  const teamContainer = document.getElementById("team-list");
+  if (!teamContainer) return;
+
+  teamContainer.innerHTML = websiteData.team
+    .map(
+      (member) => `
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="team-card animate-on-scroll">
+        <div class="team-photo">
+          <img src="${member.photo}" alt="${member.name}" class="img-fluid">
+        </div>
+        <div class="team-info">
+          <h4>${member.name}</h4>
+          <p class="team-position">${member.position}</p>
+          <div class="team-details">
+            <p><strong>ID:</strong> ${member.employeeId}</p>
+            <p><strong>Email:</strong> ${member.email}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
+          </div>
+        </div>
     </div>
   </div>
 `
-  )
-  .join("");
+    )
+    .join("");
+}
 
-// Render Paket
-const paketList = document.getElementById("paket-list");
-paketList.innerHTML = config.paket
-  .map(
-    (p) => `
-      <div class="paket-card">
-        <div class="paket-title">${p.nama}</div>
-        <div class="paket-harga">${p.harga}</div>
-        <ul class="paket-fitur">
-          ${p.fitur
-            .map((f) => `<li><i class='bx bx-check'></i> ${f}</li>`)
-            .join("")}
-        </ul>
-        <a href="${p.wa}" target="_blank" class="paket-cta">${
-      p.customCta ? p.customCta : "Pesan via WhatsApp"
-    }</a>
+// Render Stats
+function renderStats() {
+  if (!websiteData || !websiteData.about || !websiteData.about.stats) return;
+
+  const statsContainer = document.querySelector(".stats-grid");
+  if (!statsContainer) return;
+
+  statsContainer.innerHTML = websiteData.about.stats
+    .map(
+      (stat) => `
+    <div class="col-md-3 col-6">
+      <div class="stat-item">
+        <div class="stat-number" data-target="${stat.number}">0</div>
+        <div class="stat-label">${stat.label}</div>
+      </div>
       </div>
     `
-  )
-  .join("");
+    )
+    .join("");
+}
 
 // Render Contact Info
-const contactInfo = document.getElementById("contact-info");
-contactInfo.innerHTML = `
-  <p><b>WhatsApp:</b> <a href="https://wa.me/${config.contact.whatsapp}" target="_blank">${config.contact.whatsapp}</a></p>
-  <p><b>Instagram:</b> <a href="https://instagram.com/${config.contact.instagram}" target="_blank">@${config.contact.instagram}</a></p>
-`;
+function renderContactInfo() {
+  if (!websiteData || !websiteData.contact) return;
 
-document.getElementById("year").textContent = new Date().getFullYear();
+  const contactContainer = document.getElementById("contact-info");
+  if (!contactContainer) return;
 
-// Navbar mobile toggle
-const navToggle = document.getElementById("navToggle");
-const navLinks = document.getElementById("navLinks");
-navToggle.addEventListener("click", function () {
-  navLinks.classList.toggle("open");
+  contactContainer.innerHTML = `
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="contact-item">
+          <i class='bx bx-phone'></i>
+          <div>
+            <h4>Telepon</h4>
+            <p>${websiteData.contact.phone}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="contact-item">
+          <i class='bx bx-envelope'></i>
+          <div>
+            <h4>Email</h4>
+            <p>${websiteData.contact.email}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="contact-item">
+          <i class='bx bx-map'></i>
+          <div>
+            <h4>Alamat</h4>
+            <p>${websiteData.contact.address}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="contact-item">
+          <i class='bx bxl-instagram'></i>
+          <div>
+            <h4>Instagram</h4>
+            <p><a href="${websiteData.contact.instagram}" target="_blank">@afterhours_production</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// Initialize Portfolio Filter
+function initPortfolioFilter() {
+  const filterButtons = document.querySelectorAll(".portfolio-filter");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter");
+
+      // Update active button
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      // Filter items
+      portfolioItems.forEach((item) => {
+        if (filter === "all" || item.getAttribute("data-category") === filter) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+}
+
+// Initialize Animations
+function initAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animated");
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+    observer.observe(el);
+  });
+}
+
+// Initialize Counters
+function initCounters() {
+  const counters = document.querySelectorAll(".stat-number");
+
+  counters.forEach((counter) => {
+    const target = parseInt(counter.getAttribute("data-target"));
+    const duration = 2000;
+    const increment = target / (duration / 16);
+    let current = 0;
+
+    const updateCounter = () => {
+      if (current < target) {
+        current += increment;
+        counter.textContent = Math.floor(current);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target;
+      }
+    };
+
+    updateCounter();
+  });
+}
+
+// Initialize FAQ
+function initFAQ() {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // Close all other items
+      faqItems.forEach((otherItem) => {
+        otherItem.classList.remove("active");
+        otherItem.querySelector(".faq-answer").style.maxHeight = "0";
+      });
+
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+}
+
+// Initialize Contact Form
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    // Create WhatsApp message
+    const waMessage = `Halo, saya ${name} (${email}). ${message}`;
+    const waUrl = `https://wa.me/6281273462705?text=${encodeURIComponent(
+      waMessage
+    )}`;
+
+    // Open WhatsApp
+    window.open(waUrl, "_blank");
+
+    // Reset form
+    form.reset();
+
+    // Show success message
+    alert("Terima kasih! Anda akan diarahkan ke WhatsApp.");
+  });
+}
+
+// Initialize website when DOM is loaded
+document.addEventListener("DOMContentLoaded", initWebsite);
+
+// Update year in footer
+document.addEventListener("DOMContentLoaded", () => {
+  const yearElement = document.getElementById("year");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 });
-// Tutup menu saat link diklik (mobile UX)
-navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    if (window.innerWidth <= 900) navLinks.classList.remove("open");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    const icon = item.querySelector(".bx");
+
+    question.addEventListener("click", () => {
+      // Tutup semua item lain
+      faqItems.forEach((el) => {
+        if (el !== item) {
+          el.querySelector(".faq-answer").classList.remove("active");
+          el.querySelector(".bx").classList.remove("rotate");
+        }
+      });
+
+      // Toggle item yang diklik
+      answer.classList.toggle("active");
+      icon.classList.toggle("rotate");
+    });
   });
 });

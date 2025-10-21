@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Portfolio - Afterhours Production | Jasa Fotografi & Videografi Palembang
+    </title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-3.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Portfolio Afterhours Production - dokumentasi acara, wedding, wisuda, dan event lainnya di Palembang. Lihat hasil karya fotografi dan videografi kami."
+    />
+    <meta
+      name="keywords"
+      content="portfolio afterhours production, dokumentasi acara palembang, wedding photography, videografi palembang"
+    />
+    <meta name="author" content="Afterhours Production" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/favicon.ico" />
+    <!-- Boxicons CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Bootstrap Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-bottom shadow-sm"
+    >
+      <div class="container">
+        <div class="navbar-nav mx-auto d-flex flex-row justify-content-center">
+          <a class="nav-link fw-semibold" href="index.html">Beranda</a>
+          <a class="nav-link fw-semibold" href="about.html">Tentang</a>
+          <a class="nav-link fw-semibold" href="services.html">Layanan</a>
+          <a class="nav-link fw-semibold active" href="portfolio.html"
+            >Portfolio</a
+          >
+          <!-- <a class="nav-link fw-semibold" href="team.html">Tim</a> -->
+          <a class="nav-link fw-semibold" href="contact.html">Kontak</a>
+        </div>
+      </div>
+    </nav>
+
+    <main style="margin-bottom: 100px">
+      <!-- Hero Section -->
+      <section class="portfolio-hero">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="portfolio-hero-content">
+                <h1 class="portfolio-hero-title">Portfolio Kami</h1>
+                <p class="portfolio-hero-subtitle">
+                  Karya Terbaik Dokumentasi di
+                  <span class="highlight-palembang">Palembang</span>
+                </p>
+                <p class="portfolio-hero-desc">
+                  Lihat hasil dokumentasi terbaik kami dari berbagai acara di
+                  Palembang. Setiap proyek adalah bukti komitmen kami untuk
+                  mengabadikan momen berharga.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filter Section
+      <section class="portfolio-filter">
+        <div class="container">
+          <div class="filter-buttons text-center">
+            <button
+              class="filter-btn portfolio-filter active"
+              data-filter="all"
+            >
+              Semua
+            </button>
+            <button class="filter-btn portfolio-filter" data-filter="wedding">
+              Wedding
+            </button>
+            <button class="filter-btn portfolio-filter" data-filter="event">
+              Event
+            </button>
+            <button
+              class="filter-btn portfolio-filter"
+              data-filter="graduation"
+            >
+              Wisuda
+            </button>
+            <button class="filter-btn portfolio-filter" data-filter="corporate">
+              Korporat
+            </button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Portfolio Gallery -->
+      <section class="portfolio-gallery">
+        <div class="container">
+          <div class="row" id="portfolio-list">
+            <!-- Portfolio items will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="portfolio-stats">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Proyek Selesai</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-label">Klien Puas</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Tahun Pengalaman</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number" data-target="24">0</div>
+                <div class="stat-label">Jam Layanan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="portfolio-cta">
+        <div class="container text-center">
+          <h2 class="cta-title">Ingin Dokumentasi Acara Anda?</h2>
+          <p class="cta-desc">
+            Hubungi kami untuk konsultasi dan booking dokumentasi
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary btn-lg"
+              >Hubungi Kami</a
+            >
+            <a href="services.html" class="btn btn-outline btn-lg"
+              >Lihat Layanan</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <img
+          src="assets/img/logo-2.png"
+          alt="Logo Afterhours Production"
+          style="
+            height: 100px;
+            width: auto;
+            display: block;
+            margin: 0 auto 0.7rem auto;
+          "
+        />
+        <p>
+          &copy; <span id="year"></span> Afterhours Production. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6DQD1KQ9Q8cb5p+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

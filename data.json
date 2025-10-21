@@ -1,0 +1,252 @@
+{
+  "services": [
+    {
+      "id": "wedding",
+      "title": "Fotografi Wedding",
+      "desc": "Dokumentasi pernikahan dengan gaya modern dan klasik. Mengabadikan momen sakral pernikahan Anda dengan hasil foto berkualitas tinggi.",
+      "icon": "<i class='bx bx-camera'></i>"
+    },
+    {
+      "id": "video",
+      "title": "Videografi Cinematic",
+      "desc": "Video cinematic untuk acara penting. Hasil video berkualitas film dengan editing profesional dan musik yang sesuai.",
+      "icon": "<i class='bx bx-video'></i>"
+    },
+    {
+      "id": "graduation",
+      "title": "Dokumentasi Wisuda",
+      "desc": "Mengabadikan momen kelulusan dengan foto dan video yang berkesan. Dokumentasi lengkap dari prosesi hingga foto bersama.",
+      "icon": "<i class='bx  bx-certification'></i> "
+    },
+    {
+      "id": "event",
+      "title": "Event Photography",
+      "desc": "Dokumentasi berbagai acara seperti ulang tahun, gathering, seminar, dan event korporat dengan hasil profesional.",
+      "icon": "<i class='bx bx-camera-movie'></i>"
+    },
+    {
+      "id": "editing",
+      "title": "Photo Editing",
+      "desc": "Jasa editing foto profesional dengan berbagai gaya. Color grading, retouching, dan efek khusus sesuai kebutuhan.",
+      "icon": "<i class='bx bx-edit'></i>"
+    },
+    {
+      "id": "sameday",
+      "title": "Same Day Edit",
+      "desc": "Layanan editing cepat untuk acara yang membutuhkan hasil foto dalam waktu singkat. Perfect untuk event yang urgent.",
+      "icon": "<i class='bx bx-time'></i>"
+    }
+  ],
+  "packages": [
+    {
+      "id": "basic",
+      "nama": "Paket Basic",
+      "harga": "Rp 500.000",
+      "fitur": [
+        "2 jam sesi foto",
+        "50 foto hasil edit",
+        "1 fotografer",
+        "Flash drive USB",
+        "Delivery 3-5 hari"
+      ],
+      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Basic",
+      "customCta": "Pesan Paket Basic"
+    },
+    {
+      "id": "premium",
+      "nama": "Paket Premium",
+      "harga": "Rp 1.500.000",
+      "fitur": [
+        "4 jam sesi foto",
+        "100 foto hasil edit",
+        "2 fotografer",
+        "Flash drive USB + Online gallery",
+        "Delivery 3-5 hari",
+        "1 video highlight (30 detik)"
+      ],
+      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Premium",
+      "customCta": "Pesan Paket Premium"
+    },
+    {
+      "id": "luxury",
+      "nama": "Paket Luxury",
+      "harga": "Rp 2.500.000",
+      "fitur": [
+        "6 jam sesi foto",
+        "200 foto hasil edit",
+        "3 fotografer + 1 videografer",
+        "Flash drive USB + Online gallery",
+        "Delivery 3-5 hari",
+        "1 video highlight (60 detik)",
+        "1 video dokumenter (5 menit)",
+        "Album foto fisik"
+      ],
+      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Luxury",
+      "customCta": "Pesan Paket Luxury"
+    },
+    {
+      "id": "custom",
+      "nama": "Paket Custom",
+      "harga": "Harga Menyesuaikan",
+      "fitur": [
+        "Durasi sesi foto & video sesuai kebutuhan",
+        "Jumlah fotografer dan videografer dapat disesuaikan",
+        "Konsep dan lokasi bebas memilih",
+        "Bisa request gaya dokumentasi (cinematic, candid, klasik, modern, dll)",
+        "Tersedia tambahan layanan editing khusus",
+        "Pengiriman hasil sesuai kesepakatan",
+        "Gratis konsultasi konsep sebelum acara",
+        "Harga dapat disesuaikan sesuai kebutuhan"
+      ],
+      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20untuk%20membuat%20Paket%20Custom.%20Boleh%20dibantu%20untuk%20rencana%20dan%20penawaran%20harganya?",
+      "customCta": "Buat Paket Custom"
+    }
+  ],
+  "portfolio": [
+    {
+      "event": "Dokumentasi Acara Farewell SMP Tiara Nusantara & Palm KIds School",
+      "client": "SMP Tiara Nusantara & Palm KIds School",
+      "date": "16 Juni 2025",
+      "category": "event",
+      "thumb": "https://ik.imagekit.io/qttuwilgn/DSC00724.jpg?updatedAt=1751016052026",
+      "overlay": {
+        "drive": "https://drive.google.com/drive/folders/15_cm39UijKaqCn24sfjjojYTPlAVBLAD",
+        "instagram": "https://www.instagram.com/reel/DLRaFCDxhC2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      },
+      "card": {
+        "drive": "https://drive.google.com/drive/folders/15_cm39UijKaqCn24sfjjojYTPlAVBLAD",
+        "instagram": "https://www.instagram.com/reel/DLRaFCDxhC2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      }
+    },
+    {
+      "event": "Sweet Seventeen Birthday Party Vincent",
+      "client": "Vincent",
+      "date": "22 Juni 2025",
+      "category": "event",
+      "thumb": "https://ik.imagekit.io/qttuwilgn/DSC00921.jpg?updatedAt=1751015797131",
+      "overlay": {
+        "drive": "https://drive.google.com/drive/folders/1CL6mR1gWPF8zDRVV4dKh6GXQaBD1CWUE",
+        "instagram": "https://www.instagram.com/p/DLX03aYSsZj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      },
+      "card": {
+        "drive": "https://drive.google.com/drive/folders/1CL6mR1gWPF8zDRVV4dKh6GXQaBD1CWUE",
+        "instagram": "https://www.instagram.com/p/DLX03aYSsZj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      }
+    },
+    {
+      "event": "IBG 'DEMOS' SMAN 22 Palembang",
+      "client": "IBG SMAN 22 Palembang",
+      "date": "25 Juli 2025",
+      "category": "event",
+      "thumb": "https://ik.imagekit.io/qttuwilgn/NYG05945.JPG?updatedAt=1754670200914",
+      "overlay": {
+        "drive": "https://drive.google.com/drive/folders/15U19MNqBpEngFycwqn9dcS2ILPGTf9tp",
+        "instagram": "https://www.instagram.com/p/DNGZVJuSdOi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      },
+      "card": {
+        "drive": "https://drive.google.com/drive/folders/15U19MNqBpEngFycwqn9dcS2ILPGTf9tp",
+        "instagram": "https://www.instagram.com/p/DNGZVJuSdOi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      }
+    },
+    {
+      "event": "Jasver Turns 2",
+      "client": "Lisa",
+      "date": "25 Juli 2025",
+      "category": "event",
+      "thumb": "https://ik.imagekit.io/qttuwilgn/Jasver-23.jpg?updatedAt=1761056639476",
+      "overlay": {
+        "drive": "https://drive.google.com/drive/folders/1-yeuOM7tHiHh4PvfYjmbtSTOr4oeBY_O?usp=sharing",
+        "instagram": "https://www.instagram.com/p/DOKodD-Eb7L/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      },
+      "card": {
+        "drive": "https://drive.google.com/drive/folders/1-yeuOM7tHiHh4PvfYjmbtSTOr4oeBY_O?usp=sharing",
+        "instagram": "https://www.instagram.com/p/DOKodD-Eb7L/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      }
+    }
+  ],
+  "team": [
+    {
+      "id": "photographer-1",
+      "name": "Ahmad Rizki",
+      "position": "Lead Photographer",
+      "employeeId": "EMP001",
+      "email": "ahmad.rizki@afterhours.com",
+      "phone": "+62 812-3456-7890",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      "id": "photographer-2",
+      "name": "Siti Nurhaliza",
+      "position": "Wedding Specialist",
+      "employeeId": "EMP002",
+      "email": "siti.nurhaliza@afterhours.com",
+      "phone": "+62 813-4567-8901",
+      "photo": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      "id": "videographer-1",
+      "name": "Budi Santoso",
+      "position": "Videographer",
+      "employeeId": "EMP003",
+      "email": "budi.santoso@afterhours.com",
+      "phone": "+62 814-5678-9012",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      "id": "editor-1",
+      "name": "Maya Sari",
+      "position": "Photo Editor",
+      "employeeId": "EMP004",
+      "email": "maya.sari@afterhours.com",
+      "phone": "+62 815-6789-0123",
+      "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      "id": "drone-1",
+      "name": "Rizki Pratama",
+      "position": "Drone Operator",
+      "employeeId": "EMP005",
+      "email": "rizki.pratama@afterhours.com",
+      "phone": "+62 816-7890-1234",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      "id": "manager-1",
+      "name": "Dewi Kartika",
+      "position": "Project Manager",
+      "employeeId": "EMP006",
+      "email": "dewi.kartika@afterhours.com",
+      "phone": "+62 817-8901-2345",
+      "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face"
+    }
+  ],
+  "about": {
+    "title": "Tentang Afterhours Production",
+    "subtitle": "Mengabadikan Momen Terbaik Anda di Palembang",
+    "description": "Afterhours Production adalah vendor jasa fotografi dan videografi profesional di Palembang. Kami berfokus pada dokumentasi berbagai acara seperti pernikahan, wisuda, ulang tahun, dan event penting lainnya di Palembang dan sekitarnya. Dengan tim berpengalaman dan peralatan modern, kami siap mengabadikan momen terbaik Anda di Palembang.",
+    "stats": [
+      {
+        "number": "20",
+        "label": "Proyek Selesai"
+      },
+      {
+        "number": "3",
+        "label": "Tahun Pengalaman"
+      },
+      {
+        "number": "20",
+        "label": "Klien Puas"
+      },
+      {
+        "number": "24",
+        "label": "Jam Layanan"
+      }
+    ]
+  },
+  "contact": {
+    "phone": "+62 812-7346-2705",
+    "email": "info@afterhoursproduction.my.id",
+    "address": "Palembang, Sumatera Selatan",
+    "instagram": "https://instagram.com/afterhours_production"
+  }
+}
