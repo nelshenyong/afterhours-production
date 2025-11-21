@@ -200,7 +200,7 @@ function renderPortfolio() {
     .map(
       (item) => `
     <div class="col-lg-4 col-md-6 col-12 mb-4 portfolio-item animate-on-scroll" data-category="${item.category}">
-  <div class="portfolio-card">
+  <div class="portfolio-card animate-on-scroll">
         <div class="portfolio-image">
           <img src="${item.thumb}" alt="${item.event}" class="img-fluid">
           <div class="portfolio-overlay">
@@ -218,14 +218,6 @@ function renderPortfolio() {
           <h4>${item.event}</h4>
           <p class="portfolio-client">${item.client}</p>
           <p class="portfolio-date">${item.date}</p>
-    <div class="portfolio-links">
-            <a href="${item.card.drive}" class="btn btn-sm btn-primary" target="_blank">
-              <i class='bx bx-folder-open'></i> Drive
-            </a>
-            <a href="${item.card.instagram}" class="btn btn-sm btn-outline" target="_blank">
-              <i class='bx bxl-instagram'></i> Instagram
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -235,6 +227,11 @@ function renderPortfolio() {
 
   // Initialize portfolio filter
   initPortfolioFilter();
+
+  // Re-initialize animations for new portfolio cards
+  setTimeout(() => {
+    initAnimations();
+  }, 100);
 }
 
 // Render Team
@@ -374,6 +371,10 @@ function initAnimations() {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("animated");
+        // Add staggered animation for multiple elements
+        const siblings = Array.from(entry.target.parentNode.children);
+        const index = siblings.indexOf(entry.target);
+        entry.target.style.animationDelay = `${index * 0.1}s`;
       }
     });
   }, observerOptions);
@@ -381,29 +382,49 @@ function initAnimations() {
   document.querySelectorAll(".animate-on-scroll").forEach((el) => {
     observer.observe(el);
   });
+
+  // Add loading animation to hero elements
+  setTimeout(() => {
+    document.querySelectorAll(".hero-content > *").forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.2}s`;
+    });
+  }, 100);
 }
 
 // Initialize Counters
 function initCounters() {
   const counters = document.querySelectorAll(".stat-number");
 
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute("data-target"));
+          const duration = 2000;
+          const increment = target / (duration / 16);
+          let current = 0;
+
+          const updateCounter = () => {
+            if (current < target) {
+              current += increment;
+              counter.textContent = Math.floor(current);
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          };
+
+          updateCounter();
+          counterObserver.unobserve(counter);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
   counters.forEach((counter) => {
-    const target = parseInt(counter.getAttribute("data-target"));
-    const duration = 2000;
-    const increment = target / (duration / 16);
-    let current = 0;
-
-    const updateCounter = () => {
-      if (current < target) {
-        current += increment;
-        counter.textContent = Math.floor(current);
-        requestAnimationFrame(updateCounter);
-      } else {
-        counter.textContent = target;
-      }
-    };
-
-    updateCounter();
+    counterObserver.observe(counter);
   });
 }
 
@@ -415,19 +436,39 @@ function initFAQ() {
     const question = item.querySelector(".faq-question");
     const answer = item.querySelector(".faq-answer");
 
+    if (!question || !answer) return;
+
     question.addEventListener("click", () => {
       const isActive = item.classList.contains("active");
 
       // Close all other items
       faqItems.forEach((otherItem) => {
-        otherItem.classList.remove("active");
-        otherItem.querySelector(".faq-answer").style.maxHeight = "0";
+        if (otherItem !== item) {
+          otherItem.classList.remove("active");
+          const otherAnswer = otherItem.querySelector(".faq-answer");
+          if (otherAnswer) {
+            otherAnswer.style.maxHeight = "0";
+            otherAnswer.style.padding = "0 2rem";
+          }
+        }
       });
 
       // Toggle current item
       if (!isActive) {
         item.classList.add("active");
-        answer.style.maxHeight = answer.scrollHeight + "px";
+        // Calculate scroll height first
+        answer.style.maxHeight = "none";
+        const scrollHeight = answer.scrollHeight;
+        answer.style.maxHeight = "0";
+        // Force reflow
+        answer.offsetHeight;
+        // Now animate to full height
+        answer.style.maxHeight = scrollHeight + "px";
+        answer.style.padding = "0 2rem 1.5rem 2rem";
+      } else {
+        item.classList.remove("active");
+        answer.style.maxHeight = "0";
+        answer.style.padding = "0 2rem";
       }
     });
   });
@@ -446,6 +487,12 @@ function initContactForm() {
     const email = formData.get("email");
     const message = formData.get("message");
 
+    // Validate form
+    if (!name || !email || !message) {
+      alert("Mohon lengkapi semua field yang diperlukan.");
+      return;
+    }
+
     // Create WhatsApp message
     const waMessage = `Halo, saya ${name} (${email}). ${message}`;
     const waUrl = `https://wa.me/6281273462705?text=${encodeURIComponent(
@@ -463,8 +510,41 @@ function initContactForm() {
   });
 }
 
+// Add smooth scroll behavior
+function initSmoothScroll() {
+  // Add smooth scroll to all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  });
+}
+
+// Add loading animation
+function initLoadingAnimation() {
+  // Add loading class to body
+  document.body.classList.add("loading");
+
+  // Remove loading class after page load
+  window.addEventListener("load", () => {
+    document.body.classList.remove("loading");
+    document.body.classList.add("loaded");
+  });
+}
+
 // Initialize website when DOM is loaded
-document.addEventListener("DOMContentLoaded", initWebsite);
+document.addEventListener("DOMContentLoaded", () => {
+  initLoadingAnimation();
+  initSmoothScroll();
+  initWebsite();
+});
 
 // Update year in footer
 document.addEventListener("DOMContentLoaded", () => {
@@ -474,26 +554,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const faqItems = document.querySelectorAll(".faq-item");
-
-  faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-    const icon = item.querySelector(".bx");
-
-    question.addEventListener("click", () => {
-      // Tutup semua item lain
-      faqItems.forEach((el) => {
-        if (el !== item) {
-          el.querySelector(".faq-answer").classList.remove("active");
-          el.querySelector(".bx").classList.remove("rotate");
-        }
-      });
-
-      // Toggle item yang diklik
-      answer.classList.toggle("active");
-      icon.classList.toggle("rotate");
-    });
-  });
-});
+// This functionality is already handled by initFAQ() function above
