@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Booking Foto & Video | Afterhours</title>
+  <meta name="description" content="Booking fotografer dan videografer Afterhours secara online.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23171717'/%3E%3Ctext x='32' y='40' font-family='Arial' font-weight='800' font-size='24' text-anchor='middle' fill='white'%3EAF%3C/text%3E%3C/svg%3E">
+  <style>
+    html, body { height: 100%; margin: 0; background: #f5f4f0; }
+    body { font-family: Inter, Arial, sans-serif; color: #171717; }
+
+    #app {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #f5f4f0;
+    }
+
+    .loader {
+      position: fixed; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 14px;
+      font-size: 13px; color: #737373; text-align: center; padding: 24px;
+    }
+    .spinner {
+      width: 30px; height: 30px;
+      border: 3px solid #ddd; border-top-color: #171717;
+      border-radius: 50%; animation: spin .8s linear infinite;
+    }
+    .fallback { display: none; }
+    .fallback a { color: #171717; font-weight: 700; text-decoration: underline; }
+    .fallback.show { display: block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+    <span>Memuat halaman booking...</span>
+    <span class="fallback" id="fallback">
+      Halaman tidak muncul? <a id="directLink" href="#" target="_blank" rel="noopener">Buka langsung</a>
+    </span>
+  </div>
+
+  <iframe
+    id="app"
+    title="Booking Foto & Video"
+    allow="clipboard-write; fullscreen"
+  ></iframe>
+
+  <script>
+    // Ganti URL ini kalau Anda membuat deployment Apps Script baru.
+    var BOOKING_URL = 'https://script.google.com/macros/s/AKfycbzfOducp8IyP9JSc2YOPUKdMtyBOdcBeQbjlTC604FdIwFoO3TVJK2K2AAy6A8u4JC4/exec';
+
+    var frame = document.getElementById('app');
+    var loader = document.getElementById('loader');
+
+    document.getElementById('directLink').href = BOOKING_URL;
+
+    frame.addEventListener('load', function () {
+      loader.style.display = 'none';
+    });
+
+    frame.src = BOOKING_URL;
+
+    // Kalau setelah 8 detik belum termuat, tampilkan link cadangan.
+    setTimeout(function () {
+      if (loader.style.display !== 'none') {
+        document.getElementById('fallback').classList.add('show');
+      }
+    }, 8000);
+  </script>
+
+</body>
+</html>
