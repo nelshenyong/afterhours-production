@@ -39,54 +39,8 @@
   ],
   "packages": [
     {
-      "id": "basic",
-      "nama": "Paket Basic",
-      "harga": "Rp 500.000",
-      "fitur": [
-        "2 jam sesi foto",
-        "50 foto hasil edit",
-        "1 fotografer",
-        "Flash drive USB",
-        "Delivery 3-5 hari"
-      ],
-      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Basic",
-      "customCta": "Pesan Paket Basic"
-    },
-    {
-      "id": "premium",
-      "nama": "Paket Premium",
-      "harga": "Rp 1.500.000",
-      "fitur": [
-        "4 jam sesi foto",
-        "100 foto hasil edit",
-        "2 fotografer",
-        "Flash drive USB + Online gallery",
-        "Delivery 3-5 hari",
-        "1 video highlight (30 detik)"
-      ],
-      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Premium",
-      "customCta": "Pesan Paket Premium"
-    },
-    {
-      "id": "luxury",
-      "nama": "Paket Luxury",
-      "harga": "Rp 2.500.000",
-      "fitur": [
-        "6 jam sesi foto",
-        "200 foto hasil edit",
-        "3 fotografer + 1 videografer",
-        "Flash drive USB + Online gallery",
-        "Delivery 3-5 hari",
-        "1 video highlight (60 detik)",
-        "1 video dokumenter (5 menit)",
-        "Album foto fisik"
-      ],
-      "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20dengan%20Paket%20Luxury",
-      "customCta": "Pesan Paket Luxury"
-    },
-    {
       "id": "custom",
-      "nama": "Paket Custom",
+      "nama": "Pesan Sekarang",
       "harga": "Harga Menyesuaikan",
       "fitur": [
         "Durasi sesi foto & video sesuai kebutuhan",
@@ -99,7 +53,7 @@
         "Harga dapat disesuaikan sesuai kebutuhan"
       ],
       "wa": "https://wa.me/6281273462705?text=Halo,%20saya%20tertarik%20untuk%20membuat%20Paket%20Custom.%20Boleh%20dibantu%20untuk%20rencana%20dan%20penawaran%20harganya?",
-      "customCta": "Buat Paket Custom"
+      "customCta": "Buat Paket Kustom"
     }
   ],
   "portfolio": [
